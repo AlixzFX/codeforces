@@ -1,3 +1,5 @@
+// https://codeforces.com/contest/2195/problem/A
+
 // #define FAST_EXECUTION
 // #define INTERACTIVE_MODE
 
@@ -140,7 +142,18 @@ const int N = 1e9;
 
 int main() {
     TESTCASE {
-        
+        int n;
+        READ_INT(n)
+        bool ok = false;
+        int i, x;
+        FOR(i, n) {
+            READ_INT(x)
+            if (x == 67) {
+                ok = true; 
+                break;
+            } 
+        }
+        cout << (ok ? "YES\n" : "NO\n");
     }
     
     return 0;
